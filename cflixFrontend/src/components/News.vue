@@ -8,52 +8,9 @@
 
   <!-- HERO SECTION -->
   <div class="hero-section">
-    <!-- HERO SLIDE -->
-    <div class="hero-slide">
-      <div class="owl-carousel carousel-nav-center" id="hero-carousel">
+    
         <!-- SLIDE ITEM -->
         <div class="hero-slide-item">
-          <img src="../assets/images/black-banner.png" alt="" />
-          <div class="overlay"></div>
-          <div class="hero-slide-item-content">
-            <div class="item-content-wraper">
-              <div class="item-content-title top-down">
-                Black Panther
-              </div>
-              <div class="movie-infos top-down delay-2">
-                <div class="movie-info">
-                  <i class="bx bxs-star"></i>
-                  <span>9.5</span>
-                </div>
-                <div class="movie-info">
-                  <i class="bx bxs-time"></i>
-                  <span>120 mins</span>
-                </div>
-                <div class="movie-info">
-                  <span>HD</span>
-                </div>
-                <div class="movie-info">
-                  <span>16+</span>
-                </div>
-              </div>
-              <div class="item-content-description top-down delay-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-                possimus eius. Deserunt non odit, cum vero reprehenderit
-                laudantium odio vitae autem quam, incidunt molestias ratione
-                mollitia accusantium, facere ab suscipit.
-              </div>
-              <div class="item-action top-down delay-6">
-                <router-link to="/product/9" class="btn btn-hover">
-                  <i class="bx bxs-right-arrow"></i>
-                  <span>Watch now</span>
-                </router-link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END SLIDE ITEM -->
-        <!-- SLIDE ITEM -->
-        <!-- <div class="hero-slide-item">
           <img src="../assets/images/supergirl-banner.jpg" alt="" />
           <div class="overlay"></div>
           <div class="hero-slide-item-content">
@@ -91,10 +48,10 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
         <!-- END SLIDE ITEM -->
         <!-- SLIDE ITEM -->
-        <!-- <div class="hero-slide-item">
+        <div class="hero-slide-item">
           <img src="../assets/images/wanda-banner.jpg" alt="" />
           <div class="overlay"></div>
           <div class="hero-slide-item-content">
@@ -132,7 +89,51 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
+        <!-- END SLIDE ITEM -->
+        <!-- HERO SLIDE -->
+    <div class="hero-slide">
+      <div class="owl-carousel carousel-nav-center" id="hero-carousel">
+        <!-- SLIDE ITEM -->
+        <div class="hero-slide-item">
+          <img src="../assets/images/black-banner.png" alt="" />
+          <div class="overlay"></div>
+          <div class="hero-slide-item-content">
+            <div class="item-content-wraper">
+              <div class="item-content-title top-down">
+                Black Panther
+              </div>
+              <div class="movie-infos top-down delay-2">
+                <div class="movie-info">
+                  <i class="bx bxs-star"></i>
+                  <span>9.5</span>
+                </div>
+                <div class="movie-info">
+                  <i class="bx bxs-time"></i>
+                  <span>120 mins</span>
+                </div>
+                <div class="movie-info">
+                  <span>HD</span>
+                </div>
+                <div class="movie-info">
+                  <span>16+</span>
+                </div>
+              </div>
+              <div class="item-content-description top-down delay-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+                possimus eius. Deserunt non odit, cum vero reprehenderit
+                laudantium odio vitae autem quam, incidunt molestias ratione
+                mollitia accusantium, facere ab suscipit.
+              </div>
+              <div class="item-action top-down delay-6">
+                <router-link to="/productsdetail" class="btn btn-hover">
+                  <i class="bx bxs-right-arrow"></i>
+                  <span>Watch now</span>
+                </router-link>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- END SLIDE ITEM -->
       </div>
     </div>

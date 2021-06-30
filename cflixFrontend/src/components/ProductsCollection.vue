@@ -81,8 +81,8 @@
       </div>
 
       <!-- <span style="margin-left: 50px">Sorted by: {{ selected }}</span> -->
-
-      <!-- <span style="margin-left: 30px"
+<!-- 
+      <span style="margin-left: 30px"
         >Search:
         <input type="text" v-on:keyup.enter="search" />
         <button style="cursor:pointer; width: 20px;" v-on:click="resetInput">

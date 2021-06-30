@@ -2,11 +2,11 @@
   <!-- product-detail content -->
   <!-- <div class="bg-main">
         <div class="container"> -->
-  <div class="row product-row">
-    
-    <div class="col-5 col-md-12">
-      <div class="product-img" id="product-img">
-        <img src="../assets/images/black-banner.png" alt="" />
+          <div v-for="product in products" :key="product.id">
+  <div class="row product-row "  v-if="product.Id == $route.params.id" >
+    <div class="col-5 col-md-12" >
+      <div class="product-img" id="product-img" style="margin:auto">
+        <img :src="product.Img" alt="" />
       </div>
       <div class="box">
         <div class="product-img-list">
@@ -22,10 +22,11 @@
         </div>
       </div>
     </div>
-    <div class="col-7 col-md-12">
-      <div class="product-info">
+    <div class="col-7 col-md-12"   >
+      <div class="product-info" >
+        <div>
         <h1>
-          BLACK PANTHER
+          {{product.Name}}
         </h1>
         <div class="product-info-detail">
           <span class="product-info-detail-title">Category: </span>
@@ -48,7 +49,7 @@
           cum animi excepturi sed veritatis asperiores soluta, nisi atque quae
           illum. Ipsum.
         </p>
-        <div class="product-info-price">$10</div>
+        <div class="product-info-price">${{product.Saleprice}}</div>
         <div class="product-quantity-wrapper">
           <span class="product-quantity-btn">
             <i class="bx bx-minus"></i>
@@ -63,8 +64,10 @@
             add to cart
           </button>
         </div>
+        </div>
       </div>
     </div>
+  </div>
   </div>
   <!-- </div> -->
 </template>
@@ -73,16 +76,27 @@
 // import "./css/app.css";
 import "./css/grid.css";
 export default {
+   data() {
+    return {
+      products: [],
+    };
+  },
   methods: {
     greet: function() {
       alert("Add to cart successfully!! ");
     },
   },
-};
+    async created() {
+    const response = await fetch("http://127.0.0.1:3000/film");
+    this.products = await response.json();
+    // axios.get("http://127.0.0.1:3000/product").then((response) => {
+    //   this.products = Object.values(response.data);
+    //   console.log(this.products);
+    // });
+  },
+};  
 </script>
 
 <style scoped src="./css/app.css">
-.product-img{
-  margin: 0 auto !important;
-}
+
 </style>

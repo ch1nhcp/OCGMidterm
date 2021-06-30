@@ -7,17 +7,18 @@
     <div class="container">
       <div class="product-items"> -->
       <!-- single product -->
+      
       <div class="product">
         <div class="product-content">
           <div class="product-img">
             <img :src="product.Img" :alt="imageAlt" />
           </div>
           <div class="product-btns">
-            <button type="button" class="btn-cart">
+            <button type="button" class="btn-cart" @click="added">
               add to cart
               <span><i class="fas fa-plus"></i></span>
             </button>
-            <button type="button" class="btn-buy">
+            <button type="button" class="btn-buy" @click="added">
               buy now
               <span><i class="fas fa-shopping-cart"></i></span>
             </button>
@@ -25,7 +26,7 @@
         </div>
 
         <div class="product-info">
-          <a href="#" class="product-name">{{ product.Name }}</a>
+          <router-link  class="product-name" :to="'/product/'+ product.Id" >{{ product.Name }}</router-link>
           <p class="product-price">
             $ {{ product.Price}}
           </p>
@@ -63,6 +64,11 @@ export default {
   },
   props: {
     category: String,
+  },
+   methods: {
+    added: function() {
+      alert("Add to cart successfully!! ");
+    },
   },
   async created() {
     const response = await fetch("http://127.0.0.1:3000/film");

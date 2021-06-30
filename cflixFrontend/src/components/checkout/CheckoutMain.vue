@@ -34,24 +34,24 @@ export default {
           name: "Coco",
           price: 28,
           description: "Nội dung mô tả sản phẩm",
-          num: 2,
+          num: 1,
           image: "https://i.imgur.com/Ujqq4tk.jpg",
         },
         {
           id: 2,
           name: "End Game",
           price: 82,
-          num: 3,
+          num: 1,
           description: "Nội dung mô tả sản phẩm",
-          image: "https://i.imgur.com/Ujqq4tk.jpg",
+          image: "https://i.imgur.com/GAQfbWb.jpg",
         },
         {
           id: 3,
           name: "Wonder Woman",
           price: 20,
-          num: 4,
+          num: 1,
           description: "Nội dung mô tả sản phẩm",
-          image: "https://i.imgur.com/Ujqq4tk.jpg",
+          image: "https://i.imgur.com/DEwWE0Q.png",
         },
       ],
       productsClone: [],
@@ -158,3 +158,4 @@ button:hover {
   opacity: 0;
 }
 </style>
+  

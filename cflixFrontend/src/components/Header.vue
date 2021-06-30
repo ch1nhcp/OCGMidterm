@@ -33,7 +33,7 @@
         <div class="mid-header container">
           <a href="/" class="logo">CFLIX</a>
           <div class="search">
-            <input type="text" placeholder="Search"/>
+            <input type="text" placeholder="Search" v-on:keyup.enter="search" />
             <i class="bx bx-search-alt"></i>
           </div>
           <ul class="user-menu">
