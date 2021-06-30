@@ -3,7 +3,7 @@
 # Sản phẩm CFLIX: website mua phim bản quyền
 > git clone https://github.com/ch1nhcp/OCGMidterm    => clone project về
 
-> Folder cflixFrontend
+Folder cflixFrontend
   > npm install  
   > npm run serve
 
